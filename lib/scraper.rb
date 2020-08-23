@@ -27,4 +27,10 @@ courses.each do | course |
 end
 
 puts "new line"
+#the syntax below is weird. idk why you need [0]. if that's [0] what is [1] [2]???
+#i guess that's the next item in the list that also has the 2 classes..
+
+p doc.css(".inlineMobileLeft-2Yo002.imageTextBlockGrid2-3jXtmC")[0].name
+#name of xml element, not html element
+p doc.css(".inlineMobileLeft-2Yo002.imageTextBlockGrid2-3jXtmC")[0].attributes
 p doc.css(".inlineMobileLeft-2Yo002.imageTextBlockGrid2-3jXtmC")[0].children
